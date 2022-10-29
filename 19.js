@@ -1,6 +1,6 @@
-var hex = 0xa1
+var hex = 0x00
 console.log(hex);
-var hex = 0xca
+var hex = 0x77
 console.log(hex);
-var hex = 0xec
+var hex = 0xdd
 console.log(hex);
