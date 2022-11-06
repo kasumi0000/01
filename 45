@@ -1,0 +1,6 @@
+var hex = 0x90;
+console.log(hex);
+var hex = 0x00;
+console.log(hex);
+var hex = 0x20;
+console.log(hex);
