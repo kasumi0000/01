@@ -1,0 +1,26 @@
+const increase = function (num) {
+  return ++num;
+};
+
+const decrease = function (num) {
+  return --num;
+};
+
+const auxs = { increase, decrease };
+
+function makeCounter(aux) {
+  let num = 0;
+
+  return function () {
+    num = aux(num);
+    return num;
+  };
+}
+
+const increaser = makeCounter(auxs.increase);
+console.log(increaser()); // 1
+console.log(increaser()); // 2
+
+const decreaser = makeCounter(auxs.decrease);
+console.log(decreaser()); // -1
+console.log(decreaser()); // -2
